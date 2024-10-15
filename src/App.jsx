@@ -59,9 +59,9 @@ function App() {
   return (
     <div className='relative body w-[100%] h-[100%] bg-black overflow-x-hidden'>
           <div className='Homepage top-0 left-0 w-screen min-h-[0vw] bg-[#5171DF] px-4 overflow-x-hidden'>
-            <img className='absolute top-[13em] md:top-[20vw] left-[85%] md:left-[90%] w-[7vw] md:w-[5vw]' src={shape_1} ref={addToRefs}/>
+            <img className='absolute top-[10em] md:top-[20vw] left-[85%] md:left-[90%] w-[7vw] md:w-[5vw]' src={shape_1} ref={addToRefs}/>
             <img className=' absolute top-[22em] md:top-[25vw] left-[-1%] w-[10vw] md:w-[7vw] overflow-hidden' src={shape_2} ref={addToRefs}/> 
-            <img className='absolute top-[8em] md:top-[12vw] left-[70%] w-[5vw] md:w-[3vw] rotate-45' src={shape_3} ref={addToRefs}/>
+            <img className='absolute top-[7em] md:top-[12vw] left-[70%] w-[5vw] md:w-[3vw] rotate-45' src={shape_3} ref={addToRefs}/>
             <img className='absolute top-[22em] md:top-[34vw] left-[65%] md:left-[60%] w-[3.5vw] md:w-[2vw] rotate-85' src={shape_3} ref={addToRefs}/>
             <img className='absolute top-[12em] md:top-[18vw] left-[20%] w-[2vw] rotate-[30deg]' src={shape_3} ref={addToRefs}/>
             <img className=' absolute top-[30em] md:top-[35vw] left-[90%] md:left-[95%] rotate-90 w-[15vw] md:w-[9vw] overflow-x-hidden' src={shape_4}/>
