@@ -66,7 +66,7 @@ function App() {
             <img className='absolute top-[12em] md:top-[18vw] left-[20%] w-[2vw] rotate-[30deg]' src={shape_3} ref={addToRefs}/>
             <img className=' absolute top-[30em] md:top-[35vw] left-[90%] md:left-[95%] rotate-90 w-[15vw] md:w-[9vw] overflow-x-hidden' src={shape_4}/>
             <img className='absolute top-[35em] md:top-[45vw] left-[-7%] md:left-[-2%] rotate-[-90deg] w-[20vw] md:w-[7vw] overflow-x-hidden' src={shape_4}/>
-            <img className='absolute top-[32em] md:top-[48vw] left-[23%] w-[8vw] md:w-[4vw] rotate-[30deg]' src={shape_5} ref={addToRefs}/>
+            <img className='absolute top-[30em] md:top-[48vw] left-[23%] w-[8vw] md:w-[4vw] rotate-[30deg]' src={shape_5} ref={addToRefs}/>
             <img className='absolute top-[35em] md:top-[42vw] left-[80%] md:left-[87%] w-[6vw] md:w-[3vw] rotate-[-30deg]' src={shape_5} ref={addToRefs}/>
 
             <div className="NAVBAR top-0 w-full flex justify-between items-center px-2 md:pr-5 pt-1 md:pt-0">
