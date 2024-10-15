@@ -163,7 +163,7 @@ function App() {
 
             {/*------------------------------------------------------------------------------------------------------------------------------*/}
             <div className='FIRST flex flex-col items-center'>
-                <div className='home_text_1 text-white mt-[10vh] md:mt-[20px]'>Welcome to my</div>
+                <div className='home_text_1 text-white mt-[7vh] md:mt-[20px]'>Welcome to my</div>
                 <div className='home_text_2 relative text-[#D0F56E] mt-[-10px] md:mt-[-16px] flex items-center px-6 '>
                   <div>PORT
                   <span className='text-white'>FOLIO</span>
@@ -175,7 +175,7 @@ function App() {
                 </div>
                 <div className='flex md:flex-row flex-col-reverse items-center md:gap-[5em]'>
                   <img className=" hidden md:block w-[1.2vw]" src={line2}/>
-                  <div className='flex flex-row md:flex-col md:items-center mt-[5.4vw] md:mt-[-0.3vw] md:ml-[-4em] gap-[8vw] md:gap-[1.25vw] pb-[5vw] md:pb-[0]'>
+                  <div className='flex flex-row md:flex-col md:items-center mt-[5.4vw] md:mt-[-0.3vw] md:ml-[-4em] gap-[8vw] md:gap-[1.25vw] mb-[6vh] md:mb-[0]'>
                   <button><img className='w-[8vw] md:w-[3vw] ' src={link1}/></button>
                   <button><img className='w-[8vw] md:w-[3vw]' src={link2}/></button>
                   <button><img className='w-[8vw] md:w-[3vw]' src={link3}/></button>
