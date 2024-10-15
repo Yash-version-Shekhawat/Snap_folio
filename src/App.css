@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+
+.logo-links{
+  font-family: "Paytone One", sans-serif;
+}
+.resume{
+  font-family: "Paytone One", sans-serif;
+}
+.contact{
+  font-family: "Paytone One", sans-serif;
+}
+.home_text_1 {
+  font-family: "Carattere", cursive;
+  font-size: 2em;
+}
+@media (min-width: 768px) {
+  .home_text_1 {
+    font-size: clamp(2.6em, 4vw, 15em);
+  }
+}
+.home_text_2 {
+  font-family: "Paytone One", sans-serif;
+  font-size: 2em;
+}
+@media (min-width: 768px) {
+  .home_text_2 {
+    font-size: clamp(3.2em, 4.5vw, 15em);
+  }
+}
+.home_text_3{
+  font-family: "Paytone One", sans-serif;
+  font-size: 3.8em;
+}
+@media (min-width: 500px) {
+  .home_text_3 {
+    font-size: 5em;
+  }
+}
+@media (min-width: 600px) {
+  .home_text_3 {
+    font-size: 6em;
+  }
+}
+@media (min-width: 768px) {
+  .home_text_3 {
+    font-size: clamp(12vw, 6vw, 40vw);
+  }
+}
+.link_img{
+  display: flex;
+}
+@media (min-width: 600px) {
+  .link_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: between;
+  }
+}
+
+
+
+
+
+/*.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none; // Prevents circle from interfering with mouse events
+  top: 0;
+  left: 0;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  min-height: 200vh;
+  padding: 50px;
+}
+
+.spacer {
+  height: 100vh;
+}
+
+.highlight-text {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #1E1E1E; 
+}
+
+.letter {
+  display: inline-block; 
+  opacity: 0.2; 
+  transition: opacity 0.2s ease-in-out; 
+}
+*/
