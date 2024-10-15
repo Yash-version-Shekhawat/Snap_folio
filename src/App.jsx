@@ -69,7 +69,7 @@ function App() {
             <img className='absolute top-[32em] md:top-[48vw] left-[23%] w-[8vw] md:w-[4vw] rotate-[30deg]' src={shape_5} ref={addToRefs}/>
             <img className='absolute top-[35em] md:top-[42vw] left-[80%] md:left-[87%] w-[6vw] md:w-[3vw] rotate-[-30deg]' src={shape_5} ref={addToRefs}/>
 
-            <div className="NAVBAR top-0 w-full flex justify-between items-center px-2 pt-1">
+            <div className="NAVBAR top-0 w-full flex justify-between items-center px-2 md:pr-5 pt-1 md:pt-0">
       {/* LEFT SIDE: Logo + Links */}
       <div className="LEFT flex items-center">
         <div className="logo my-[1em]">
