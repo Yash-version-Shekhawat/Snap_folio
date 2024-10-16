@@ -16,10 +16,34 @@ import shape_4 from './assets/semicircle.png'
 import shape_5 from './assets/ghost.png'
 import designer from './assets/Designer.svg'
 import developer from './assets/Developer.svg'
+import my from './assets/smart.svg'
 import cut from './assets/cut.svg'
 import './App.css'
 import { gsap } from "gsap";
 function App() {
+  const experiences = [
+    {
+      time: "Jul 2017 - Aug 2017",
+      role: "Graphic Designer",
+      type: "Internship",
+      company: "Graphic Line Studio",
+      bg: "bg-[#ECF5FA]",
+    },
+    {
+      time: "May 2019 - Jan 2024",
+      role: "Web Designer",
+      type: "Full Time",
+      company: "t26 Italia",
+      bg: "bg-[#ECF5FA]",
+    },
+    {
+      time: "Feb 2024 - Present",
+      role: "Graphic Designer & Illustrator",
+      type: "Freelance",
+      company: "Freelance",
+      bg: "bg-[#D0F56E]",
+    },
+  ];
   const [isOpen, setIsOpen] = useState(false);
   const shapes = useRef([]); // Store multiple refs in an array
 
@@ -79,7 +103,7 @@ function App() {
         {/* Links Menu - Slide-in only on small screens */}
         <div
           className={`logo-links flex flex-col gap-5 md:flex md:flex-row z-10 pb-5 pl-5 pt-2 pr-2 md:p-5 md:px-3 m-[15px] md:static 
-            fixed top-0 right-0 md:h-auto w-[70%] md:w-auto bg-[#1e1e1e] md:bg-transparent
+            fixed top-0 right-0 md:h-auto w-[70%] md:w-auto bg-[#282830] md:bg-transparent
             rounded-2xl transition-transform duration-500 ease-in-out transform md:transform-none 
             ${isOpen ? "translate-x-0" : "translate-x-[120vw]"}`}
         >
@@ -197,7 +221,38 @@ function App() {
               <div>Actually, I've always struggled to identify with a specific job title because I've never wanted to specialize in just one thing. I love design in all its forms and I enjoy exploring the areas that interest me the most while learning new things every day.</div>
             </div>
             </div>  
+            <div className="w-full mt-10 md:p-5 ">
+      <div className="flex flex-col md:flex-row items-center gap-8">
+        {/* Image Section */}
+        <div className="w-full md:w-1/4 flex justify-center">
+          <img
+            className='md:w-[25vw]'
+            src={my}
+          />
+        </div>
+        <div className="w-full md:w-3/4">
+          <div className="hidden md:grid grid-cols-3 text-gray-500 text-sm font-medium uppercase border-b-[1px] border-[#1e1e1e20]">
+            <div className="time p-3">Time</div>
+            <div className="time p-3">Role</div>
+            <div className="time p-3">Company</div>
           </div>
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className={`md:grid md:grid-cols-3 flex flex-col gap-2 md:gap-0 ${exp.bg} border-b-[1px] border-[#1e1e1e20] last:border-none p-4`}
+            >
+              <div className="time">{exp.time}</div>
+              <div>
+                <div className="role text-xl">{exp.role}</div>
+                <div className="intern_type text-gray-500">{exp.type}</div>
+              </div>
+              <div className="company text-gray-700">{exp.company}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+    </div>
     </div>
   )
 }
