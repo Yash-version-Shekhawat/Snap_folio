@@ -99,15 +99,12 @@ function App() {
         <div className="logo my-[1em]">
           <img className="h-[2em] md:h-[3em]" src={logo} alt="Logo" />
         </div>
-
-        {/* Links Menu - Slide-in only on small screens */}
         <div
           className={`logo-links flex flex-col gap-5 md:flex md:flex-row z-10 pb-5 pl-5 pt-2 pr-2 md:p-5 md:px-3 m-[15px] md:static 
             fixed top-0 right-0 md:h-auto w-[70%] md:w-auto bg-[#282830] md:bg-transparent
             rounded-2xl transition-transform duration-500 ease-in-out transform md:transform-none 
             ${isOpen ? "translate-x-0" : "translate-x-[120vw]"}`}
         >
-          {/* Close Icon - Visible only when the menu is open on small screens */}
           <button
             className="self-end mb-5 md:hidden"
             onClick={() => setIsOpen(false)}
@@ -213,6 +210,7 @@ function App() {
                 </div>
             </div>
           </div>
+          {/*---------------------------------------------------------------------------------------------*/}
           <div className='second w-screen min-h-[0vw] py-10 px-5 bg-[#ECF5FA]'>
             <div className='flex items-center flex-col text-center '>
             <div className='little text-[#1e1e1e] '>little<span className='about_me'> about me</span></div>
@@ -221,38 +219,32 @@ function App() {
               <div>Actually, I've always struggled to identify with a specific job title because I've never wanted to specialize in just one thing. I love design in all its forms and I enjoy exploring the areas that interest me the most while learning new things every day.</div>
             </div>
             </div>  
-            <div className="w-full mt-10 md:p-5 ">
-      <div className="flex flex-col md:flex-row items-center gap-8">
-        {/* Image Section */}
-        <div className="w-full md:w-1/4 flex justify-center">
-          <img
-            className='md:w-[25vw]'
-            src={my}
-          />
-        </div>
-        <div className="w-full md:w-3/4">
-          <div className="hidden md:grid grid-cols-3 text-gray-500 text-sm font-medium uppercase border-b-[1px] border-[#1e1e1e20]">
-            <div className="time p-3">Time</div>
-            <div className="time p-3">Role</div>
-            <div className="time p-3">Company</div>
-          </div>
-          {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className={`md:grid md:grid-cols-3 flex flex-col gap-2 md:gap-0 ${exp.bg} border-b-[1px] border-[#1e1e1e20] last:border-none p-4`}
-            >
-              <div className="time">{exp.time}</div>
-              <div>
-                <div className="role text-xl">{exp.role}</div>
-                <div className="intern_type text-gray-500">{exp.type}</div>
-              </div>
-              <div className="company text-gray-700">{exp.company}</div>
+            <div className="w-full mt-10 md:mt-14 md:p-5 ">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="w-full md:w-1/4 flex justify-center">
+              <img
+                className='md:w-[25vw]'
+                src={my}
+              />
             </div>
-          ))}
+            <div className="w-full md:w-3/4">
+              {experiences.map((exp, index) => (
+                <div
+                  key={index}
+                  className={`md:grid md:grid-cols-3 flex flex-col gap-2 md:gap-0 ${exp.bg} border-b-[1px] border-[#1e1e1e20] last:border-none p-5 2xl:p-7`}
+                >
+                <div className="time 2xl:text-2xl">{exp.time}</div>
+                <div>
+                  <div className="role text-xl 2xl:text-3xl">{exp.role}</div>
+                  <div className="intern_type text-gray-500 2xl:text-xl">{exp.type}</div>
+                </div>
+                <div className="company text-gray-700 2xl:text-2xl">{exp.company}</div>
+                </div>
+              ))}
+            </div>
+           </div>
+         </div>
         </div>
-      </div>
-    </div>
-    </div>
     </div>
   )
 }
