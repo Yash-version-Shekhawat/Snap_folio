@@ -189,9 +189,15 @@ function App() {
                 </div>
             </div>
           </div>
-          <div className='second w-screen h-[70vw] bg-slate-300'>
-            <div className='text-black'>hello</div>
-          </div>  
+          <div className='second w-screen min-h-[0vw] py-10 px-5 bg-[#ECF5FA]'>
+            <div className='flex items-center flex-col text-center '>
+            <div className='little text-[#1e1e1e] '>little<span className='about_me'> about me</span></div>
+            <div className='content md:w-[45%] flex flex-col gap-5'>
+              <div>Hello there! I'm a Creative Developer, Designer & Product Manager based in India, passionate about making great products ✦</div>
+              <div>Actually, I've always struggled to identify with a specific job title because I've never wanted to specialize in just one thing. I love design in all its forms and I enjoy exploring the areas that interest me the most while learning new things every day.</div>
+            </div>
+            </div>  
+          </div>
     </div>
   )
 }
