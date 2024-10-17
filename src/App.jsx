@@ -23,24 +23,24 @@ import { gsap } from "gsap";
 function App() {
   const experiences = [
     {
-      time: "Jul 2017 - Aug 2017",
-      role: "Graphic Designer",
-      type: "Internship",
+      time: "2021 - 2023",
+      role: "Making Personal Projects",
+      type: "Learning",
       company: "Graphic Line Studio",
       bg: "bg-[#ECF5FA]",
     },
     {
-      time: "May 2019 - Jan 2024",
-      role: "Web Designer",
-      type: "Full Time",
-      company: "t26 Italia",
+      time: "June 2024 - August 2024",
+      role: "Product Designer & Developer",
+      type: "Internship",
+      company: "Bhoogol Smart Services",
       bg: "bg-[#ECF5FA]",
     },
     {
-      time: "Feb 2024 - Present",
-      role: "Graphic Designer & Illustrator",
-      type: "Freelance",
-      company: "Freelance",
+      time: "March 2024 - May 2024",
+      role: "Software Developer",
+      type: "Internship",
+      company: "StoreBud Tech.",
       bg: "bg-[#D0F56E]",
     },
   ];
