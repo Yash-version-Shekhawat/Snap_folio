@@ -86,7 +86,15 @@
 .intern_type{
   font-family: "Alegreya Sans", sans-serif;
 }
-
+.services_heading{
+  font-family: "Paytone One", sans-serif;
+  font-size: 3em;
+}
+@media (min-width: 768px) {
+  .services_heading {
+    font-size: clamp(4em, 5vw, 15em);
+  }
+}
 
 
 

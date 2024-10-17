@@ -221,7 +221,11 @@ function App() {
             </div>  
             <div className="w-full mt-10 md:mt-14 md:p-5 ">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-full md:w-1/4 flex justify-center">
+              <div className="w-full md:w-1/4 flex justify-center j">
+              <img className='absolute w-[8vw] md:w-[3vw] left-[25vw] md:left-16' src={shape_3} ref={addToRefs}/>
+              <img className='absolute w-[6vw] md:w-[3vw] mt-5 left-[60vw] md:left-[18vw]' src={shape_3} ref={addToRefs}/>
+              <img className='absolute w-[7vw] md:w-[2.5vw] mt-[15em] md:mt-32 left-[35vw] md:left-[6.5vw]' src={shape_3} ref={addToRefs}/>
+              <img className='absolute w-[5vw] md:w-[2vw] mt-[10em] md:mt-44 left-[58vw] md:left-[17vw]' src={shape_3} ref={addToRefs}/>
               <img
                 className='md:w-[25vw]'
                 src={my}
@@ -244,6 +248,13 @@ function App() {
             </div>
            </div>
          </div>
+        </div>
+        <div className='services w-screen min-h-[0vw] p-5 bg-[#282830]'>
+          <div className='flex flex-col items-center'>
+            <div className='services_heading text-white'>Services</div>
+          </div>
+          
+
         </div>
     </div>
   )
