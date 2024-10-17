@@ -211,7 +211,7 @@ function App() {
             </div>
           </div>
           {/*---------------------------------------------------------------------------------------------*/}
-          <div className='second w-screen min-h-[0vw] py-10 px-5 bg-[#ECF5FA]'>
+          <div className='second w-screen min-h-[0vw] py-10 px-4 bg-[#ECF5FA]'>
             <div className='flex items-center flex-col text-center '>
             <div className='little text-[#1e1e1e] '>little<span className='about_me'> about me</span></div>
             <div className='content w-[85%] md:w-[45%] flex flex-col gap-5'>
