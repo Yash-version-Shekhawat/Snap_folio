@@ -95,6 +95,16 @@
     font-size: clamp(4em, 5vw, 15em);
   }
 }
+.service_text{
+  font-family: "Carattere", cursive;
+  font-size: 3em;
+  
+}
+@media (min-width: 768px) {
+  .service_text {
+    font-size: clamp(4em, 5vw, 15em);
+  }
+}
 
 
 

@@ -18,15 +18,23 @@ import designer from './assets/Designer.svg'
 import developer from './assets/Developer.svg'
 import my from './assets/smart.svg'
 import cut from './assets/cut.svg'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 import './App.css'
 import { gsap } from "gsap";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 function App() {
+  useEffect(() => {
+    AOS.init({duration: 1000,
+    easing: 'slide-up'});
+  }, []);
   const experiences = [
     {
       time: "2021 - 2023",
       role: "Making Personal Projects",
       type: "Learning",
-      company: "Graphic Line Studio",
+      company: "College",
       bg: "bg-[#ECF5FA]",
     },
     {
@@ -252,9 +260,12 @@ function App() {
         <div className='services w-screen min-h-[0vw] p-5 bg-[#282830]'>
           <div className='flex flex-col items-center'>
             <div className='services_heading text-white'>Services</div>
+            <div data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-out" className='service_text text-white'>Web Designing</div>
+            <div data-aos="fade-right" data-aos-offset="50" data-aos-easing="ease-in-out"  className='service_text text-white'>Product Management</div>
+            <div data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-out"  className='service_text text-white'>Web and App Development</div>
+            <div data-aos="fade-right" data-aos-offset="50" data-aos-easing="ease-in-out"  className='service_text text-white'>Video Editing</div>
+            <div data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-out"  className='service_text text-white'>Bit of Data Analysis</div>
           </div>
-          
-
         </div>
     </div>
   )
@@ -262,50 +273,6 @@ function App() {
 export default App
 
 /* Import necessary libraries
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import "./App.css"; // Import styles
-
-const App = () => {
-  const circleRef = useRef(null); // Ref for the circle
-
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      const { innerWidth, innerHeight } = window; // Window dimensions
-      const { clientX, clientY } = event; // Mouse coordinates
-
-      // Calculate movement based on mouse position relative to the screen center
-      const xOffset = ((clientX - innerWidth / 2) / innerWidth) * 50;
-      const yOffset = ((clientY - innerHeight / 2) / innerHeight) * 50;
-
-      // Animate circle to slightly move based on mouse position
-      gsap.to(circleRef.current, {
-        x: xOffset, 
-        y: yOffset,
-        duration: 0.3, 
-        ease: "power2.out",
-      });
-    };
-
-    // Add mousemove event listener
-    window.addEventListener("mousemove", handleMouseMove);
-
-    // Cleanup on component unmount
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
-  return (
-    <div className="App">
-      
-      <div className="circle" ref={circleRef}></div>
-    </div>
-  );
-};
-
-export default App;
-
 
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
