@@ -35,21 +35,21 @@ function App() {
       role: "Making Personal Projects",
       type: "Learning",
       company: "College",
-      bg: "bg-[#ECF5FA]",
+      bg: "bg-[#D0F56E20]",
     },
     {
       time: "June 2024 - August 2024",
       role: "Product Designer & Developer",
       type: "Internship",
       company: "Bhoogol Smart Services",
-      bg: "bg-[#ECF5FA]",
+      bg: "bg-[#D0F56E50]",
     },
     {
       time: "March 2024 - May 2024",
       role: "Software Developer",
       type: "Internship",
       company: "StoreBud Tech.",
-      bg: "bg-[#D0F56E]",
+      bg: "bg-[#D0F56E95]",
     },
   ];
   const [isOpen, setIsOpen] = useState(false);
@@ -260,12 +260,17 @@ function App() {
         <div className='services w-screen min-h-[0vw] p-5 bg-[#282830]'>
           <div className='flex flex-col items-center'>
             <div className='services_heading text-white'>Services</div>
-            <div data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-out" className='service_text text-white'>Web Designing</div>
-            <div data-aos="fade-right" data-aos-offset="50" data-aos-easing="ease-in-out"  className='service_text text-white'>Product Management</div>
-            <div data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-out"  className='service_text text-white'>Web and App Development</div>
-            <div data-aos="fade-right" data-aos-offset="50" data-aos-easing="ease-in-out"  className='service_text text-white'>Video Editing</div>
-            <div data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-out"  className='service_text text-white'>Bit of Data Analysis</div>
+            <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-easing="ease-in-out" className='service_text text-white'>Web Designing</div>
+            <div data-aos="zoom-in-up" data-aos-delay="200" data-aos-easing="ease-in-out"  className='service_text text-white'>Product Management</div>
+            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-easing="ease-in-out"  className='service_text text-white'>Web and App Development</div>
+            <div data-aos="zoom-in-up" data-aos-delay="400" data-aos-easing="ease-in-out"  className='service_text text-white'>Video Editing</div>
+            <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-easing="ease-in-out"  className='service_text text-white'>Bit of Data Analysis</div>
           </div>
+        </div>
+        <div className='fourth w-screen min-h-[0vw] py-10 px-4 bg-[#ECF5FA]'>
+            <div className='flex items-center flex-col text-center '>
+            <div className='little text-[#1e1e1e] '>little<span className='about_me'> Work</span></div>
+            </div> 
         </div>
     </div>
   )
