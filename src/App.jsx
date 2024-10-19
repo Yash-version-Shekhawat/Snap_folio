@@ -16,8 +16,12 @@ import shape_4 from './assets/semicircle.png'
 import shape_5 from './assets/ghost.png'
 import designer from './assets/Designer.svg'
 import developer from './assets/Developer.svg'
+import travel from './assets/Macbook.svg'
+import bhoogol from './assets/iPhone.svg'
 import my from './assets/smart.svg'
 import cut from './assets/cut.svg'
+import travel_logo from './assets/travelit_logo.svg'
+import bhoogol_logo from './assets/bhoogol_logo.svg'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 import './App.css'
@@ -223,8 +227,8 @@ function App() {
             <div className='flex items-center flex-col text-center '>
             <div className='little text-[#1e1e1e] '>little<span className='about_me'> about me</span></div>
             <div className='content w-[85%] md:w-[45%] flex flex-col gap-5'>
-              <div>Hello there! I'm a Creative Developer, Designer & Product Manager based in India, passionate about making great products ✦</div>
-              <div>Actually, I've always struggled to identify with a specific job title because I've never wanted to specialize in just one thing. I love design in all its forms and I enjoy exploring the areas that interest me the most while learning new things every day.</div>
+              <div>Hi, I’m Yashvardhan, a passionate developer and product enthusiast with a knack for creating seamless digital experiences. ✦</div>
+              <div> I specialize in web and app development, product management, and have dabbled in data analysis. From building responsive designs to solving real-world challenges, I love turning ideas into innovative products.</div>
             </div>
             </div>  
             <div className="w-full mt-10 md:mt-14 md:p-5 ">
@@ -259,7 +263,7 @@ function App() {
         </div>
         <div className='services w-screen min-h-[0vw] p-5 bg-[#282830]'>
           <div className='flex flex-col items-center'>
-            <div className='services_heading text-white'>Services</div>
+            <div className='services_heading text-white mb-6'>SERVICES</div>
             <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-easing="ease-in-out" className='service_text text-white'>Web Designing</div>
             <div data-aos="zoom-in-up" data-aos-delay="200" data-aos-easing="ease-in-out"  className='service_text text-white'>Product Management</div>
             <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-easing="ease-in-out"  className='service_text text-white'>Web and App Development</div>
@@ -267,11 +271,43 @@ function App() {
             <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-easing="ease-in-out"  className='service_text text-white'>Bit of Data Analysis</div>
           </div>
         </div>
-        <div className='fourth w-screen min-h-[0vw] py-10 px-4 bg-[#ECF5FA]'>
-            <div className='flex items-center flex-col text-center '>
-            <div className='little text-[#1e1e1e] '>little<span className='about_me'> Work</span></div>
-            </div> 
+
+    <div className='fourth w-screen min-h-[100vh] py-10 px-4 bg-[#ECF5FA]'>
+      <div className='flex items-center flex-col text-center'>
+        <div className='little text-[#1e1e1e]'>
+          little<span className='about_me'> Work</span>
         </div>
+        <div className='content w-[85%] md:w-[45%] flex flex-col gap-5'>
+              <div>Throughout my journey, I’ve had the opportunity to dive into development, design, and product management. I thrive on transforming ideas into practical solutions, blending creativity with technology. ✦</div>
+              <div> Here’s a glimpse of some projects that reflect my skills and passion.</div>
+            </div>
+
+        <div className='w-full flex flex-col md:flex-row gap-6 md:px-10 mt-10 md:mt-14'>
+          {/* Work 1 */}
+          <div className='work_1 md:w-1/2 h-[110vw] md:h-[40vw] relative overflow-hidden rounded-lg'>
+            <div
+              className='inner-work bg-cover bg-center transition-transform duration-500 ease-in-out'
+              style={{ backgroundImage: `url(${travel})` }}
+            ></div>
+            <div className='overlay'>
+              <img className='h-[13vw] md:h-[5vw]' src={travel_logo}/>
+            </div>
+          </div>
+
+          {/* Work 2 */}
+          <div className='work_2 md:w-1/2 h-[110vw] md:h-[40vw] relative overflow-hidden rounded-lg'>
+            <div
+              className='inner-work bg-cover bg-center transition-transform duration-500 ease-in-out'
+              style={{ backgroundImage: `url(${bhoogol})` }}
+            ></div>
+            <div className='overlay'>
+            <img className='h-[13vw] md:h-[5vw]' src={bhoogol_logo}/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </div>
   )
 }

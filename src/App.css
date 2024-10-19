@@ -92,7 +92,7 @@
 }
 @media (min-width: 768px) {
   .services_heading {
-    font-size: clamp(4em, 5vw, 15em);
+    font-size: clamp(1em, 3vw, 15em);
   }
 }
 .service_text{
@@ -105,7 +105,57 @@
     font-size: clamp(4em, 5vw, 15em);
   }
 }
+.work_1, .work_2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
 
+.inner-work {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+  background-size: 110%; /* Slightly larger for zoom effect */
+}
+
+/* Overlay styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.overlay-text {
+  color: white;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  transform: scale(0.9); /* Start slightly smaller */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Hover effects */
+.work_1:hover .inner-work, .work_2:hover .inner-work {
+  transform: scale(1.1); /* Zoom the background */
+  filter: blur(5px); /* Apply blur effect */
+}
+
+.work_1:hover .overlay, .work_2:hover .overlay {
+  opacity: 1; /* Make overlay visible */
+}
+
+.work_1:hover .overlay-text, .work_2:hover .overlay-text {
+  transform: scale(1); /* Slight zoom-in effect for text */
+}
 
 
 
