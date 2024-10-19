@@ -281,20 +281,16 @@ function App() {
               <div>Throughout my journey, I’ve had the opportunity to dive into development, design, and product management. I thrive on transforming ideas into practical solutions, blending creativity with technology. ✦</div>
               <div> Here’s a glimpse of some projects that reflect my skills and passion.</div>
             </div>
-
-        <div className='w-full flex flex-col md:flex-row gap-6 md:px-10 mt-10 md:mt-14'>
-          {/* Work 1 */}
-          <div className='work_1 md:w-1/2 h-[110vw] md:h-[40vw] relative overflow-hidden rounded-lg'>
-            <div
+            <div className='w-full flex flex-col md:flex-row gap-6 md:px-10 mt-10 md:mt-14'>
+             <div className='work_1 md:w-1/2 h-[110vw] md:h-[40vw] relative overflow-hidden rounded-lg'>
+             <div
               className='inner-work bg-cover bg-center transition-transform duration-500 ease-in-out'
               style={{ backgroundImage: `url(${travel})` }}
-            ></div>
-            <div className='overlay'>
+             ></div>
+             <div className='overlay'>
               <img className='h-[13vw] md:h-[5vw]' src={travel_logo}/>
-            </div>
+             </div>
           </div>
-
-          {/* Work 2 */}
           <div className='work_2 md:w-1/2 h-[110vw] md:h-[40vw] relative overflow-hidden rounded-lg'>
             <div
               className='inner-work bg-cover bg-center transition-transform duration-500 ease-in-out'
