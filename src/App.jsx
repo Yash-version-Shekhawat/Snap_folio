@@ -271,7 +271,6 @@ function App() {
             <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-easing="ease-in-out"  className='service_text text-white'>Bit of Data Analysis</div>
           </div>
         </div>
-
     <div className='fourth w-screen min-h-[100vh] py-10 px-4 bg-[#ECF5FA]'>
       <div className='flex items-center flex-col text-center'>
         <div className='little text-[#1e1e1e]'>
