@@ -278,7 +278,7 @@ function App() {
               <div> Here’s a glimpse of some projects that reflect my skills and passion.</div>
             </div>
             <div className='w-full flex flex-col md:flex-row gap-6 md:px-10 mt-10 md:mt-14'>
-             <div className='work_1 md:w-1/2 h-[110vw] md:h-[40vw] relative overflow-hidden rounded-lg'>
+             <div data-aos="flip-down" className='work_1 md:w-1/2 h-[110vw] md:h-[40vw] relative overflow-hidden rounded-lg'>
              <div
               className='inner-work bg-cover bg-center transition-transform duration-500 ease-in-out'
               style={{ backgroundImage: `url(${travel})` }}
@@ -287,7 +287,7 @@ function App() {
               <img className='h-[13vw] md:h-[5vw]' src={travel_logo}/>
              </div>
           </div>
-          <div className='work_2 md:w-1/2 h-[110vw] md:h-[40vw] relative overflow-hidden rounded-lg'>
+          <div data-aos="flip-down" className='work_2 md:w-1/2 h-[110vw] md:h-[40vw] relative overflow-hidden rounded-lg'>
             <div
               className='inner-work bg-cover bg-center transition-transform duration-500 ease-in-out'
               style={{ backgroundImage: `url(${bhoogol})` }}
