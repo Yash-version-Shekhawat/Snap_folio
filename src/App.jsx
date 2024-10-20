@@ -159,10 +159,7 @@ function App() {
           </div>
         </div>
       </div>
-
-      {/* RIGHT SIDE: Resume + Contact + Hamburger Icon */}
       <div className="RIGHT flex items-center md:gap-[20px]">
-        {/* Buttons for Desktop */}
         <div className="hidden md:flex gap-[20px]">
           <button className="resume h-[2em] w-[8em] bg-[#E05FE4] rounded-lg shadow-md shadow-black p-1 text-[1.1em]">
             Resume
