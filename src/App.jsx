@@ -1,4 +1,5 @@
 import { useState, useRef,useEffect } from 'react'
+import Marquee from 'react-fast-marquee'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import logo from './assets/logo_sf.svg'
@@ -22,6 +23,12 @@ import my from './assets/smart.svg'
 import cut from './assets/cut.svg'
 import travel_logo from './assets/travelit_logo.svg'
 import bhoogol_logo from './assets/bhoogol_logo.svg'
+import line_3 from './assets/line_3.svg'
+import made from './assets/made_line.svg'
+import place from './assets/place_line.svg'
+import place1 from './assets/place_1.svg'
+import img10 from './assets/img_10.svg'
+import img11 from './assets/img_11.svg'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 import './App.css'
@@ -268,7 +275,7 @@ function App() {
             <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-easing="ease-in-out"  className='service_text text-white'>Bit of Data Analysis</div>
           </div>
         </div>
-    <div className='fourth w-screen min-h-[100vh] py-10 px-4 bg-[#ECF5FA]'>
+    <div className='fourth w-screen min-h-[0vw] py-10 px-4 bg-[#ECF5FA]'>
       <div className='flex items-center flex-col text-center'>
         <div className='little text-[#1e1e1e]'>
           little<span className='about_me'> Work</span>
@@ -299,6 +306,67 @@ function App() {
         </div>
       </div>
     </div>
+    <div className='w-[100%] min-h-[0vw] bg-[#282830]  border-[#282830] border-8'>
+          <div className='w-[100%] h-[] bg-[#5171DF] md:h-[70%] rounded-b-[4vw] md:rounded-b-[3vw] flex flex-col md:pb-12 py-2'>
+            <img className='mt-[4vw]' src={line_3}/>
+            <img className='absolute flex right-0 -mt-[0.5vw] md:mt-[1.7vw] w-[34vw] md:w-[20vw] mr-[5vw]' src={img10}/>
+            <div className='flex mt-[20vw] md:mt-[12vw] md:gap-[4vw] pl-[3vw] md:pl-[4vw] flex-col md:flex-row'>
+              <div className='flex flex-col'>
+                <img className='w-[90vw] md:w-[40vw]' src={made}/>
+                 <h1 className='year text-white ml-[39vw] md:ml-[18vw] text-[10vw] md:text-[3.5vw] -mt-[7vw] md:-mt-[2.5vw]'>2024</h1>
+              </div>
+              <div>
+                <img className='hidden md:block md:w-[40vw]' src={place}/>
+                <img className='w-[90vw] block md:hidden mt-[7vw] md:mt-[0]' src={place}/>
+                <h1 className='country text-white ml-[39vw] md:ml-[18vw] text-[9vw] md:text-[4vw] -mt-[7vw] md:-mt-[2.5vw] '>India</h1>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col pl-[3vw] md:pl-[13vw] pt-[3.5vw] md:pt-[5vw]'>
+            <h1 className='connect_text text-[#FFFFFF35] text-[6vw] md:text-[2.2vw]'>Connect :</h1>
+            <div className='links_last flex md:gap-[4vw] mt-[1vw] md:flex-row flex-col items-center md:items-start'>
+            <button><h1 className='text-white text-[3.5vw] md:text-[1.5vw] hover:text-[#5171DF]'>LINKED IN</h1></button>
+            <div className='md:block text-[6vw] md:text-[2vw] font-bold text-[#D0F56E] md:-mt-[0.7vw] '>●</div>
+            <button><h1 className='text-white text-[3.5vw] md:text-[1.5vw] hover:text-[#1d1d1d]'>GITHUB</h1></button>
+            <div className='md:block text-[6vw]  md:text-[2vw] font-bold text-[#D0F56E] md:-mt-[0.7vw] '>●</div>
+            <button><h1 className='text-white text-[3.5vw] md:text-[1.5vw] hover:text-[#7f2bb3]'>INSTAGRAM</h1></button>
+            <div className='md:block text-[6vw] md:text-[2vw] font-bold text-[#D0F56E] md:-mt-[0.7vw] '>●</div>
+            <button><h1 className='text-white text-[3.5vw] md:text-[1.5vw] hover:text-[#E05FE4]'>DRIBBLE</h1></button>
+            <div className='md:block text-[6vw] md:text-[2vw] font-bold text-[#D0F56E] md:-mt-[0.7vw] '>●</div>
+            <button><h1 className='text-white text-[3.5vw] md:text-[1.5vw] hover:text-[#d6404a]'>BEHANCE</h1></button>
+            </div>
+          </div>
+          <img className='absolute z-[2] -mt-[28vw] md:-mt-[5.5vw] w-[30vw] md:w-[12vw] ' src={img11}/>
+          <div className='marq w-[100%] flex justify-center h-[25vw] md:h-[11vw] bg-[#282830] md:py-[1vw] py-[1vw] border-t-2 border-b-2 border-[#ffffff80] mt-[6vw] md:mt-[8vw]'>
+                <Marquee className='marq '>
+                  <div className='text-[#ffffff35] text-[10vw] md:text-[5vw] pr-[4vw]'>
+                    Lets 
+                  </div>
+                  <div className='text-[#ffffff35] text-[10vw] md:text-[5vw] pr-[4vw]'>
+                    make 
+                  </div>
+                  <div className='text-[#ffffff35] text-[10vw] md:text-[5vw] pr-[4vw]'>
+                    something 
+                  </div>
+                  <div className='text-[#ffffff35] text-[10vw] md:text-[5vw] pr-[4vw]'>
+                    together 
+                  </div>
+                  <button>
+                  <div className='text-[#ffffff] text-[10vw] md:text-[5vw] mr-[4vw] px-[4vw] py-[2vw] md:py-[0.5vw] bg-[#1E1E1E] rounded-xl flex text-center hover:bg-[#D0F56E]'>
+                    E-MAIL 
+                  </div>
+                  </button>
+                </Marquee>
+              </div>
+              <div className=' bg-[#1e1e1e] py-[1.5vw] px-[4vw] md:px-[2vw] md:py-[1vw] mt-[0.5vw] '>
+                  <div className='copyright flex gap-[1vw] md:gap-[0.5vw]'>
+                    <h1 className='text-[2.5vw] md:text-[1vw] text-[#ffffff]'> Designed </h1>
+                    <h1 className='text-[2.5vw] md:text-[1vw] text-[#ffffff]'> by</h1>
+                    <h1 className='text-[2.5vw] md:text-[1vw] text-[#ffffff]'> yashv_s</h1>
+                  </div>
+                  <h1 className='copyright text-[2.5vw] md:text-[1vw] text-[#ffffff]'>©2024</h1>
+                </div>
+        </div>
 
     </div>
   )

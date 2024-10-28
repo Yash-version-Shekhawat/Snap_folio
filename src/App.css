@@ -157,7 +157,30 @@
   transform: scale(1); /* Slight zoom-in effect for text */
 }
 
+.year{
+  font-family: "Carattere", cursive;
+}
 
+.connect_text{
+  font-family: "Paytone One", sans-serif;
+}
+
+.country{
+  font-family: "Carattere", cursive;
+}
+
+.links_last{
+  font-family: "Paytone One", sans-serif;
+}
+
+.marq{
+  font-family: "Paytone One", sans-serif;
+}
+
+.copyright{
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 500;
+}
 
 /*.App {
   width: 100vw;
