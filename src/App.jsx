@@ -35,6 +35,54 @@ import './App.css'
 import { gsap } from "gsap";
 import AOS from 'aos';
 import "aos/dist/aos.css";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
+// Component for each shuffling text button
+function ShufflingTextButton({ originalText, colorClass }) {
+  const [text, setText] = useState(originalText);
+  const [hovering, setHovering] = useState(false);
+
+  const shuffleText = () => {
+    let iterations = 0;
+    const maxIterations = originalText.length;
+
+    const interval = setInterval(() => {
+      setText((prev) =>
+        prev
+          .split("")
+          .map((_, index) =>
+            index < iterations
+              ? originalText[index]
+              : letters[Math.floor(Math.random() * letters.length)]
+          )
+          .join("")
+      );
+
+      iterations++;
+
+      if (iterations > maxIterations) {
+        clearInterval(interval);
+        setHovering(false);
+      }
+    }, 80); // Adjust the speed if necessary
+  };
+
+  const handleMouseOver = () => {
+    if (!hovering) {
+      setHovering(true);
+      shuffleText();
+    }
+  };
+
+  return (
+    <button
+      onMouseOver={handleMouseOver}
+      className={`shuffling-button ${colorClass}`}
+    >
+      {text}
+    </button>
+  );
+}
 function App() {
   useEffect(() => {
     AOS.init({duration: 1000,
@@ -99,6 +147,13 @@ function App() {
       shapes.current.push(el);
     }
   };
+  const texts = [
+    { name: "LINKEDIN", colorClass: "linkedin" },
+    { name: "GITHUB", colorClass: "github" },
+    { name: "INSTAGRAM", colorClass: "instagram" },
+    { name: "DRIBBBLE", colorClass: "dribbble" },
+    { name: "BEHANCE", colorClass: "behance" },
+  ];
   return (
     <div className='relative body w-[100%] h-[100%] bg-black overflow-x-hidden'>
           <div className='Homepage top-0 left-0 w-screen min-h-[0vw] bg-[#5171DF] px-4 overflow-x-hidden'>
@@ -266,16 +321,16 @@ function App() {
          </div>
         </div>
         <div className='services w-screen min-h-[0vw] p-5 bg-[#282830]'>
-          <div className='flex flex-col items-center'>
+          <div className='flex flex-col items-center justify-center'>
             <div className='services_heading text-white mb-6'>SERVICES</div>
             <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-easing="ease-in-out" className='service_text text-white'>Web Designing</div>
             <div data-aos="zoom-in-up" data-aos-delay="200" data-aos-easing="ease-in-out"  className='service_text text-white'>Product Management</div>
-            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-easing="ease-in-out"  className='service_text text-white'>Web and App Development</div>
+            <div data-aos="zoom-in-up" data-aos-delay="300" data-aos-easing="ease-in-out"  className='service_text text-white'>App Development</div>
             <div data-aos="zoom-in-up" data-aos-delay="400" data-aos-easing="ease-in-out"  className='service_text text-white'>Video Editing</div>
             <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-easing="ease-in-out"  className='service_text text-white'>Bit of Data Analysis</div>
           </div>
         </div>
-    <div className='fourth w-screen min-h-[0vw] py-10 px-4 bg-[#ECF5FA]'>
+    <div className='fourth w-screen min-h-[0vw] pt-10 pb-20 px-4 bg-[#ECF5FA]'>
       <div className='flex items-center flex-col text-center'>
         <div className='little text-[#1e1e1e]'>
           little<span className='about_me'> Work</span>
@@ -307,10 +362,10 @@ function App() {
       </div>
     </div>
     <div className='w-[100%] min-h-[0vw] bg-[#282830]  border-[#282830] border-8'>
-          <div className='w-[100%] h-[] bg-[#5171DF] md:h-[70%] rounded-b-[4vw] md:rounded-b-[3vw] flex flex-col md:pb-12 py-2'>
+          <div className='w-[100%] h-[] bg-[#5171DF] md:h-[70%] rounded-b-[4vw] md:rounded-b-[3vw] flex flex-col md:pb-12 pb-8 py-3'>
             <img className='mt-[4vw]' src={line_3}/>
-            <img className='absolute flex right-0 -mt-[0.5vw] md:mt-[1.7vw] w-[34vw] md:w-[20vw] mr-[5vw]' src={img10}/>
-            <div className='flex mt-[20vw] md:mt-[12vw] md:gap-[4vw] pl-[3vw] md:pl-[4vw] flex-col md:flex-row'>
+            <img className='absolute flex right-0 mt-[1vw] md:mt-[1.7vw] w-[40vw] md:w-[20vw] mr-[5vw]' src={img10}/>
+            <div className='flex mt-[25.8vw] md:mt-[12vw] md:gap-[4vw] pl-[3vw] md:pl-[4vw] flex-col md:flex-row'>
               <div className='flex flex-col'>
                 <img className='w-[90vw] md:w-[40vw]' src={made}/>
                  <h1 className='year text-white ml-[39vw] md:ml-[18vw] text-[10vw] md:text-[3.5vw] -mt-[7vw] md:-mt-[2.5vw]'>2024</h1>
@@ -324,16 +379,16 @@ function App() {
           </div>
           <div className='flex flex-col pl-[3vw] md:pl-[13vw] pt-[3.5vw] md:pt-[5vw]'>
             <h1 className='connect_text text-[#FFFFFF35] text-[6vw] md:text-[2.2vw]'>Connect :</h1>
-            <div className='links_last flex md:gap-[4vw] mt-[1vw] md:flex-row flex-col items-center md:items-start'>
-            <button><h1 className='text-white text-[3.5vw] md:text-[1.5vw] hover:text-[#5171DF]'>LINKED IN</h1></button>
-            <div className='md:block text-[6vw] md:text-[2vw] font-bold text-[#D0F56E] md:-mt-[0.7vw] '>●</div>
-            <button><h1 className='text-white text-[3.5vw] md:text-[1.5vw] hover:text-[#1d1d1d]'>GITHUB</h1></button>
-            <div className='md:block text-[6vw]  md:text-[2vw] font-bold text-[#D0F56E] md:-mt-[0.7vw] '>●</div>
-            <button><h1 className='text-white text-[3.5vw] md:text-[1.5vw] hover:text-[#7f2bb3]'>INSTAGRAM</h1></button>
-            <div className='md:block text-[6vw] md:text-[2vw] font-bold text-[#D0F56E] md:-mt-[0.7vw] '>●</div>
-            <button><h1 className='text-white text-[3.5vw] md:text-[1.5vw] hover:text-[#E05FE4]'>DRIBBLE</h1></button>
-            <div className='md:block text-[6vw] md:text-[2vw] font-bold text-[#D0F56E] md:-mt-[0.7vw] '>●</div>
-            <button><h1 className='text-white text-[3.5vw] md:text-[1.5vw] hover:text-[#d6404a]'>BEHANCE</h1></button>
+            <div className='links_last flex mt-[1vw] md:flex-row flex-col items-center md:items-start'>
+            {texts.map((item, index) => (
+              <div className="text-with-bullet text-[3.5vw] md:text-[1.5vw] text-[#ffffff]" key={index}>
+              <ShufflingTextButton
+               originalText={item.name}
+               colorClass={item.colorClass}
+              /><div className="md:hidden"></div>
+             {index < texts.length - 1 && <span className="bullet md:mx-[4vw] text-[#D0F56E] text-[6vw] md:text-[1.5vw] flex md:inline-block items-center justify-center ">●</span>}
+             </div>
+            ))}
             </div>
           </div>
           <img className='absolute z-[2] -mt-[28vw] md:-mt-[5.5vw] w-[30vw] md:w-[12vw] ' src={img11}/>

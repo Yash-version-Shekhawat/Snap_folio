@@ -97,7 +97,7 @@
 }
 .service_text{
   font-family: "Carattere", cursive;
-  font-size: 3em;
+  font-size: 13vw;
   
 }
 @media (min-width: 768px) {
@@ -182,6 +182,21 @@
   font-weight: 500;
 }
 
+.linkedin:hover {
+  color: #5171DF;
+}
+.github:hover {
+  color: #a8dadc;
+}
+.instagram:hover {
+  color: #936EF5;
+}
+.dribbble:hover {
+  color: #E05FE4;
+}
+.behance:hover {
+  color: #d6404a;
+}
 /*.App {
   width: 100vw;
   height: 100vh;
