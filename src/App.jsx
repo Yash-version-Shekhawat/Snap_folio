@@ -333,7 +333,7 @@ function App() {
         </div>
     <div className='fourth w-screen min-h-[0vw] pt-10 pb-20 px-4 bg-[#ECF5FA]'>
       <div className='flex items-center flex-col text-center'>
-        <div className='little text-[#1e1e1e] text-[14vw] md:text-[7vw]'>
+        <div className='work text-[#1e1e1e] text-[14vw] md:text-[7vw]'>
            Work
         </div>
         <img className='absolute mt-[7vw] md:mt-[3.5vw] w-[24vw] md:w-[11vw]' src={img8}/>

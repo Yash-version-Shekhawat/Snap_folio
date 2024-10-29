@@ -59,6 +59,16 @@
 }
 .little{
   font-family: "Paytone One", sans-serif;
+  font-size: 4em;
+}
+@media (min-width: 768px) {
+  .little {
+    font-size: clamp(3em, 5vw, 15em);
+  }
+}
+
+.work{
+  font-family: "Paytone One", sans-serif;
 }
 .about_me{
   font-family: "Carattere", cursive;
