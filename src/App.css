@@ -59,7 +59,7 @@
 }
 .little{
   font-family: "Paytone One", sans-serif;
-  font-size: 4em;
+  font-size: 2.8em;
 }
 @media (min-width: 768px) {
   .little {
@@ -92,7 +92,7 @@
 }
 .services_heading{
   font-family: "Paytone One", sans-serif;
-  font-size: 3em;
+  font-size: 2.8em;
 }
 @media (min-width: 768px) {
   .services_heading {
@@ -101,7 +101,7 @@
 }
 .service_text{
   font-family: "Carattere", cursive;
-  font-size: 13vw;
+  font-size: 11vw;
   
 }
 @media (min-width: 768px) {
