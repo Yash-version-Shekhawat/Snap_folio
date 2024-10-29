@@ -59,12 +59,6 @@
 }
 .little{
   font-family: "Paytone One", sans-serif;
-  font-size: 3em;
-}
-@media (min-width: 768px) {
-  .little {
-    font-size: clamp(3em, 5vw, 15em);
-  }
 }
 .about_me{
   font-family: "Carattere", cursive;
@@ -158,7 +152,9 @@
 }
 
 .year{
-  font-family: "Carattere", cursive;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .connect_text{
@@ -166,7 +162,9 @@
 }
 
 .country{
-  font-family: "Carattere", cursive;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .links_last{
@@ -179,7 +177,8 @@
 
 .copyright{
   font-family: "Alegreya Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .linkedin:hover {

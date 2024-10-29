@@ -29,6 +29,7 @@ import place from './assets/place_line.svg'
 import place1 from './assets/place_1.svg'
 import img10 from './assets/img_10.svg'
 import img11 from './assets/img_11.svg'
+import img8 from './assets/img_8.svg'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 import './App.css'
@@ -332,10 +333,11 @@ function App() {
         </div>
     <div className='fourth w-screen min-h-[0vw] pt-10 pb-20 px-4 bg-[#ECF5FA]'>
       <div className='flex items-center flex-col text-center'>
-        <div className='little text-[#1e1e1e]'>
-          little<span className='about_me'> Work</span>
+        <div className='little text-[#1e1e1e] text-[14vw] md:text-[7vw]'>
+           Work
         </div>
-        <div className='content w-[85%] md:w-[45%] flex flex-col gap-5'>
+        <img className='absolute mt-[7vw] md:mt-[3.5vw] w-[24vw] md:w-[11vw]' src={img8}/>
+        <div className='content w-[85%] md:w-[45%] flex flex-col gap-5 mt-[10vw] md:mt-[4vw]'>
               <div>Throughout my journey, I’ve had the opportunity to dive into development, design, and product management. I thrive on transforming ideas into practical solutions, blending creativity with technology. ✦</div>
               <div> Here’s a glimpse of some projects that reflect my skills and passion.</div>
             </div>
