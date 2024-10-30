@@ -286,7 +286,7 @@ function App() {
           <div className='second w-screen min-h-[0vw] py-10 px-4 bg-[#ECF5FA]'>
             <div className='flex items-center flex-col text-center '>
             <div className='little text-[#1e1e1e] '>little<span className='about_me'> about me</span></div>
-            <div className='content w-[85%] md:w-[45%] flex flex-col gap-5'>
+            <div className='content w-[85%] md:w-[45%] flex flex-col gap-5 text-[3.7vw] md:text-[1.3vw]'>
               <div>Hi, I’m Yashvardhan, a passionate developer and product enthusiast with a knack for creating seamless digital experiences. ✦</div>
               <div> I specialize in web and app development, product management, and have dabbled in data analysis. From building responsive designs to solving real-world challenges, I love turning ideas into innovative products.</div>
             </div>
@@ -337,7 +337,7 @@ function App() {
            Work
         </div>
         <img className='absolute mt-[7vw] md:mt-[3.5vw] w-[24vw] md:w-[11vw]' src={img8}/>
-        <div className='content w-[85%] md:w-[45%] flex flex-col gap-5 mt-[10vw] md:mt-[4vw]'>
+        <div className='content w-[85%] md:w-[45%] flex flex-col gap-5 mt-[10vw] md:mt-[4vw] text-[3.7vw] md:text-[1.3vw]'>
               <div>Throughout my journey, I’ve had the opportunity to dive into development, design, and product management. I thrive on transforming ideas into practical solutions, blending creativity with technology. ✦</div>
               <div> Here’s a glimpse of some projects that reflect my skills and passion.</div>
             </div>
