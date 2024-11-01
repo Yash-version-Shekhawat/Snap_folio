@@ -373,9 +373,9 @@ function App() {
                   <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#5171DF] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={jss}/></div>
                 </Marquee>
               </div>
-    <div className='fourth w-screen min-h-[0vw] pt-10 pb-20 px-4 bg-[#ECF5FA]'>
-    <img className='absolute w-[23vw] md:w-[15vw] mt-[65vw] md:mt-[2vw] left-0' src={img7}/>
-    <img className='absolute w-[23vw] md:w-[15vw] mt-[76vw] md:mt-[10vw] right-0' src={img9}/>
+    <div className='fourth w-screen min-h-[0vw] pt-4 pb-20 px-4 bg-[#ECF5FA]'>
+    <img className='absolute w-[23vw] md:w-[15vw] mt-[66vw] md:mt-[2vw] left-0' src={img7}/>
+    <img className='absolute w-[23vw] md:w-[15vw] mt-[78vw] md:mt-[10vw] right-0' src={img9}/>
       <div className='flex items-center flex-col text-center'>
         <div className='work text-[#1e1e1e] text-[14vw] md:text-[7vw]'>
            Work
@@ -385,7 +385,7 @@ function App() {
               <div>Throughout my journey, I’ve had the opportunity to dive into development, design, and product management. I thrive on transforming ideas into practical solutions, blending creativity with technology. ✦</div>
               <div> Here’s a glimpse of some projects that reflect my skills and passion.</div>
             </div>
-            <div className='w-full flex flex-col md:flex-row gap-6 md:px-10 mt-[110px] md:mt-14'>
+            <div className='w-full flex flex-col md:flex-row gap-6 md:px-10 mt-[34vw] md:mt-14'>
              <div data-aos="flip-down" className='work_1 md:w-1/2 h-[90vw] md:h-[40vw] relative overflow-hidden rounded-lg'>
              <div
               className='inner-work bg-cover bg-center transition-transform duration-500 ease-in-out'
