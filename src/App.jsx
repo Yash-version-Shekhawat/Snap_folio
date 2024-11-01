@@ -32,6 +32,18 @@ import img11 from './assets/img_11.svg'
 import img7 from './assets/img_7.svg'
 import img8 from './assets/img_8.svg'
 import img9 from './assets/img_9.svg'
+import cpp from './assets/c-.png'
+import boot from './assets/bootstrap.png'
+import figma from './assets/figma.png'
+import py from './assets/python.png'
+import sql from './assets/mysql.png'
+import cs from './assets/css.png'
+import ht from './assets/html.png'
+import exp from './assets/express.png'
+import fram from './assets/flutter.png'
+import jss from './assets/js.png'
+import rea from './assets/atom.png'
+import tail from './assets/tailwindcss.png'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 import './App.css'
@@ -333,6 +345,34 @@ function App() {
             <div data-aos="zoom-in-up" data-aos-delay="500" data-aos-easing="ease-in-out"  className='service_text text-white'>Bit of Data Analysis</div>
           </div>
         </div>
+    <div className='w-[100%] flex justify-center h-[32vw] md:h-[12vw] bg-[#ECF5FA] md:py-[1vw] py-[1vw] '>
+                <Marquee>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E30] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#D0F56E] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={cpp}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#5171DF] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={figma}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#D0F56E] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={fram}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#5171DF] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={sql}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#D0F56E] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={rea}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#5171DF] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={cs}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#D0F56E] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw] ml-[1vw] md:ml-[0.5vw]' src={ht}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#5171DF] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={boot}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1e1e1e25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#D0F56E] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={exp}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#5171DF] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={py}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#D0F56E] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={tail}/></div>
+                  <div className=' text-[8vw] md:text-[3vw] font-sans font-bold text-[#1E1E1E25] pr-3 md:pr-5 text-shadow-xl'>●</div>
+                  <div className='w-[20vw] md:w-[7vw] h-[20vw] md:h-[7vw] bg-[#5171DF] mr-3 md:mr-5 rounded-xl flex justify-center items-center'><img className='w-[12vw] md:w-[5vw] h-[12vw] md:h-[5vw]' src={jss}/></div>
+                </Marquee>
+              </div>
     <div className='fourth w-screen min-h-[0vw] pt-10 pb-20 px-4 bg-[#ECF5FA]'>
     <img className='absolute w-[23vw] md:w-[15vw] mt-[65vw] md:mt-[2vw] left-0' src={img7}/>
     <img className='absolute w-[23vw] md:w-[15vw] mt-[76vw] md:mt-[10vw] right-0' src={img9}/>
